@@ -4,10 +4,6 @@ import com.mapzen.jpostal.ParsedComponent;
 import com.mapzen.jpostal.ParserOptions;
 
 public class AddressParser {
-    static {
-        System.loadLibrary("jpostal_parser"); // Load native library at runtime
-    }
-
     static native synchronized void setup();
     static native synchronized void setupDataDir(String dataDir);
     private native synchronized ParsedComponent[] libpostalParse(String address, ParserOptions options);
