@@ -1,10 +1,6 @@
 package com.mapzen.jpostal;
 
 public class Dedupe {
-    static {
-        System.loadLibrary("jpostal_dedupe"); // Load native library at runtime
-    }
-
     private volatile static Dedupe instance = null;
 
     public static Dedupe getInstanceDataDir(String dataDir) {

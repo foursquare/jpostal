@@ -5,10 +5,6 @@ public class ParserOptions {
     private String country;
 
     public static class Builder {
-        static {
-            System.loadLibrary("jpostal_parser"); // Load native library at runtime
-        }
-
         private String language;
         private String country;
 

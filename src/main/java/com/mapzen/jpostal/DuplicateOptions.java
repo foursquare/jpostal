@@ -13,10 +13,6 @@ public class DuplicateOptions {
     }
 
     public static class Builder {
-        static {
-            System.loadLibrary("jpostal_dedupe"); // Load native library at runtime
-        }
-
         private String[] languages;
 
         private native synchronized void setDefaultOptions();
