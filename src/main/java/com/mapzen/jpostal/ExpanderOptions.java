@@ -176,10 +176,6 @@ public class ExpanderOptions {
     }
 
     public static class Builder {
-        static {
-            System.loadLibrary("jpostal_expander"); // Load native library at runtime
-        }
-
         private String[] languages;
         private short addressComponents;
         private boolean latinAscii;
